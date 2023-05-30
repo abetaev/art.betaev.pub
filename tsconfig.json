@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "module": "ES2022",
+    "moduleResolution": "node",
+    "target": "ES2022",
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    "resolveJsonModule": true,
+    "strict": true,
+    "paths": {
+      "@UI/*": [
+        "src/UI/*"
+      ],
+      "@svc/*": [
+        "src/services/*"
+      ],
+      "@mdl/*": [
+        "src/models/*"
+      ],
+    }
+  }
+}

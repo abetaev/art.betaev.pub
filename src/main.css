@@ -1,0 +1,18 @@
+article > main {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+article img {
+  cursor: pointer;
+  border-style: ridge;
+  border-width: 10px;
+  border-color: var(--primary);
+  border-color: var(--secondary);
+  margin-right: 30px;
+}
+
+dialog article {
+  max-width: unset;
+}

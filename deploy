@@ -1,0 +1,20 @@
+#!/bin/sh
+
+set -x
+set -e
+
+git clean -fdx
+npm pack
+git checkout gh-pages
+git pull
+
+rm -rvf index.html assets
+
+tar -xf art-*.tgz
+mv dist/* ./
+rm -rvf art-*.tgz dist
+
+git add index.html assets
+git commit -am"$(date)"
+
+git push

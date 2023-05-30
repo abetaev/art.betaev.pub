@@ -1,0 +1,26 @@
+{
+  "name": "art",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "[ -f .i ] || pnpm i && touch .i && vite",
+    "cleanup": "git clean -fdx",
+    "lint": "eslint src",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "[ -f i ] || pnpm i && touch .i && vite build",
+    "prepack": "npm run build"
+  },
+  "author": "abetaev",
+  "license": "CC",
+  "repository": "git@github.com:abetaev/art.betaev.pub.git",
+  "dependencies": {
+    "@picocss/pico": "^1.5.10",
+    "solid-js": "^1.7.5"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.4",
+    "vite": "^4.3.9",
+    "vite-plugin-solid": "^2.7.0"
+  }
+}
